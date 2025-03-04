@@ -19,8 +19,8 @@ This is a **Node.js** and **Express.js**-based authentication system using **JWT
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo/user-auth-system.git
-cd user-auth-system
+git clone https://github.com/shashwat-builds/user-authentication-system.git
+cd user-authentication-system
 ```
 
 ### 2️⃣ Install Dependencies
