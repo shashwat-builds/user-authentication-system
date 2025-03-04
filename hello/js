@@ -1,0 +1,11 @@
+const jwt = require("jsonwebtoken");
+
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2M0MzI0Mzk3ZjgxMTEwZTE3MzJlNTEiLCJpYXQiOjE3NDA5MTMzMTYsImV4cCI6MTc0MDkxNjkxNn0.zY3JaiW4Sv-JIb5V8dnFN6BZCdrlGUs0uQvSgN4wMWE";
+const secret = "Ydf8632d2e6296983fb660c0b7377858f49588e7c53bdbfc0ee5d9bf78a7eaa53";  // Use the actual secret from .env
+
+try {
+  const verified = jwt.verify(token, secret);
+  console.log("✅ Token is valid:", verified);
+} catch (error) {
+  console.log("❌ Token verification failed:", error.message);
+}
